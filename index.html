@@ -20,24 +20,58 @@
 		}
 	
 		.navigation{
-		display: flex;
-		align-items: flex-start;
-		
-		
+			display: grid;
+			grid-template-rows: auto;
+			grid-template-areas: 
+			"sitename menuitem1 menuitem2 menuitem3 blank login ";
+			
 		}
+		
+		.navind{
+			grid-area: sitename;
+		}
+		.svt{
+			grid-area: menuitem1;
+		}
+		.GIT{
+			grid-area: menuitem2;
+		}
+		
+		.navyt{
+			grid-area: menuitem3;
+		}
+		.navblank1{
+			grid-area: blank;
+		}
+		.logincontainer{
+			grid-area: login;
+		}
+		
 		.container{
-			display: flex;
-			align-items: flex-start;
-			gap: 20px;
+			display: grid;
+			grid-template-columns: 150px 150px 150px 150px;
+			grid-template-rows: auto;
+			grid-template-areas: 
+			"SectionA SectionA . SectionB"
+			"Article0 Article1 . SectionB"
+			"footer footer footer footer";
+			
 		}
-		.aside{
-		display: flex;
-		align-items: flex-start;
+		.SectionA{
+			grid-area: SectionA;
+		}
+		.SectionB{
+			grid-area: SectionB;
+		}
+		.Article0{
+			grid-area: Article0;
+		}
+		.Article1{
+			grid-area: Article1;
+		}
 		
-		}
-		.Sweden{
-		display: flex;
-		align-items: flex-start;
+		.aside{
+			  grid-area: footer;
 		
 		}
 		
@@ -53,32 +87,27 @@
 				<H1>Index</H1>
 			</div>
 
-			<div class="index0pag">
+			<div class="svt">
 				<ul>
 					<li><a href="https://svt.se">SVT</a></li>
 				</ul>
 			</div>
 
-			<div class="index0pag">
+			<div class="GIT">
 				<ul>
 					<li><a href="https://github.com">GIT</a></li>
 				</ul>
 			</div>
 
-			<div class="index0pagcenter">
-				<ul>
-	
-				</ul>
-			</div>
 
-			<div class="index0pag">
+			<div class="navyt">
 				<ul>
 					<li><a href="https://youtube.com">Youtube</a></li>
 				</ul>
 			</div>
 
 
-			<div class="index0pagcenter">
+			<div class="navblank1">
 				<ul>
 	
 				</ul>
@@ -93,12 +122,15 @@
 </head>
 
 <body>
+	<div class="container">
+	
+		<div class="SectionA">
 		<div class="titlecontainer">
 			<H2>Articles</H2>
 			<p>p0: Lorem Ipsum</p>
 			<p>p1: Abit Onus Obit Anus</p>
 		</div>
-	<div class="container">
+	
 		<div class="article_left">
 			<article>
 				<H1>Article 0</H1>
@@ -115,8 +147,17 @@
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/30%2B68_German_Air_Force_Eurofighter_Typhoon_EF2000_ILA_Berlin_2016_06.jpg/1024px-30%2B68_German_Air_Force_Eurofighter_Typhoon_EF2000_ILA_Berlin_2016_06.jpg" alt="svt" width="1000" height="250">
 			</article>
 		</div>
+		</div>
+		
+		<div class="SectionB">
+		<article>
+				<H1>Article B</H1>
+				<p>p0: Lorem Ipsum</p>
+				<p>p1: Abit Onus Obit Anus</p>
+			</article>
+		</div>
+		
 	</div>
-
 	<aside class="aside">
 		<H1>Aside</H1>
 		<ul>
