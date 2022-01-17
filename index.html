@@ -1,87 +1,167 @@
 <!DOCTYPE html>
 <html>
-
 <meta charset=" UTF-8">
 <head>
-<title>Index</title>
-<H1>Page Title</H1>
-<ul>
-    <li><a href="https://svt.se">SVT</a></li>
-    <li><a href="https://github.com">GIT</a></li>
-	<li><a href="https://youtube.com">Youtube</a></li>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			background-color: OldLace;
+		}
+
+		h1 {
+			color: Black;
+		}
+
+		p {
+			font-family: Tahoma;
+			font-size: 20px;
+		}
 	
-</ul>
-<a href="login.html">Login</a>
+		.navigation{
+		display: flex;
+		align-items: flex-start;
+		
+		
+		}
+		.container{
+			display: flex;
+			align-items: flex-start;
+			gap: 20px;
+		}
+		.aside{
+		display: flex;
+		align-items: flex-start;
+		
+		}
+		.Sweden{
+		display: flex;
+		align-items: flex-start;
+		
+		}
+		
+	</style>
+
+
+	<div class="headercontent">
+		<div class="navigation">
+	
+			<title>Index</title>
+
+			<div class="index0pag1">
+				<H1>Index</H1>
+			</div>
+
+			<div class="index0pag">
+				<ul>
+					<li><a href="https://svt.se">SVT</a></li>
+				</ul>
+			</div>
+
+			<div class="index0pag">
+				<ul>
+					<li><a href="https://github.com">GIT</a></li>
+				</ul>
+			</div>
+
+			<div class="index0pagcenter">
+				<ul>
+	
+				</ul>
+			</div>
+
+			<div class="index0pag">
+				<ul>
+					<li><a href="https://youtube.com">Youtube</a></li>
+				</ul>
+			</div>
+
+
+			<div class="index0pagcenter">
+				<ul>
+	
+				</ul>
+			</div>
+
+			<div class="logincontainer">
+				<a href="login.html">Login</a>
+			</div>
+
+		</div>
+	</div>
 </head>
 
 <body>
-<div class="div0">
-<H2>Div0</H2>
-<p>p0: Lorem Ipsum</p>
-<p>p1: Abit Onus Obit Anus</p>
+		<div class="titlecontainer">
+			<H2>Articles</H2>
+			<p>p0: Lorem Ipsum</p>
+			<p>p1: Abit Onus Obit Anus</p>
+		</div>
+	<div class="container">
+		<div class="article_left">
+			<article>
+				<H1>Article 0</H1>
+				<p>p0: Lorem Ipsum</p>
+				<p>p1: Abit Onus Obit Anus</p>
+			</article>
+		</div>
 
-<article>
-<H1>Art0</H1>
-<p>p0: Lorem Ipsum</p>
-<p>p1: Abit Onus Obit Anus</p>
+		<div class="article_right">
+			<article>
+				<H1>Article 1</H1>
+				<p>p0: Lorem Ipsum</p>
+				<p>p1: Abit Onus Obit Anus</p>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/30%2B68_German_Air_Force_Eurofighter_Typhoon_EF2000_ILA_Berlin_2016_06.jpg/1024px-30%2B68_German_Air_Force_Eurofighter_Typhoon_EF2000_ILA_Berlin_2016_06.jpg" alt="svt" width="1000" height="250">
+			</article>
+		</div>
+	</div>
 
-</article>
-<article>
-<H1>Art1</H1>
-<p>p0: Lorem Ipsum</p>
-<p>p1: Abit Onus Obit Anus</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/30%2B68_German_Air_Force_Eurofighter_Typhoon_EF2000_ILA_Berlin_2016_06.jpg/1024px-30%2B68_German_Air_Force_Eurofighter_Typhoon_EF2000_ILA_Berlin_2016_06.jpg" alt="svt" width="1000" height="250">
-
-</article>
-
-</div>
-
-<aside>
-<H1>Aside</H1>
-<ul>
-    <li>
-	<H1>Sweden</H1>
-	<ol>
-	<li><p>Stockholm</p></li>
-	<li><p>Göteborg</p></li>
-	<li><p>Malmö</p></li>
-	</ol>
-	</li>
-    <li>
-	<H1>Denmark</H1>
-	<ol>
-	<li><p>Copenhagen</p></li>
-	<li><p>Aarhus</p></li>
-	<li><p>Odense</p></li>
-	</ol>
-	<li>
-	<H1>Norway</H1>
-	<ol>
-	<li><p>Oslo</p></li>
-	<li><p>Bergen</p></li>
-	<li><p>Stavanger</p></li>
-	</ol>
-	<li>
-	<H1>Finland</H1>
-	<ol>
-	<li><p>Helsinki</p></li>
-	<li><p>Espoo</p></li>
-	<li><p>Tampere</p></li>
-	</ol>
-</ul>
-
-</aside>
-
-
-
-
-
-<footer>
-<span><p>&copy; 2022 JJ</p></span>
-
-</footer>
-
-
+	<aside class="aside">
+		<H1>Aside</H1>
+		<ul>
+			<div class="Sweden">
+			<li>
+				<H1>Sweden</H1>
+				<ol>
+					<li><p>Stockholm</p></li>
+					<li><p>Göteborg</p></li>
+					<li><p>Malmö</p></li>
+				</ol>
+			</li>
+			</div>
+			
+			<div class="Sweden">
+			<li>
+				<H1>Denmark</H1>
+				<ol>
+					<li><p>Copenhagen</p></li>
+					<li><p>Aarhus</p></li>
+					<li><p>Odense</p></li>
+				</ol>
+			</li>
+			</div>
+			
+			<li>
+				<H1>Norway</H1>
+					<ol>
+						<li><p>Oslo</p></li>
+						<li><p>Bergen</p></li>
+						<li><p>Stavanger</p></li>
+					</ol>
+			</li>
+			<li>
+				<H1>Finland</H1>
+				<ol>
+					<li><p>Helsinki</p></li>
+					<li><p>Espoo</p></li>
+					<li><p>Tampere</p></li>
+				</ol>
+			</li>
+		</ul>
+	</aside>
+	<footer>
+		<span><p>&copy; 2022 JJ</p></span>
+	</footer>
 </body>
-
 </html>
