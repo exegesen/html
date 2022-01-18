@@ -1,0 +1,71 @@
+* {
+			box-sizing: border-box;
+		}
+		body {
+			background-color: OldLace;
+		}
+
+		h1 {
+			color: Black;
+		}
+
+		p {
+			font-family: Tahoma;
+			font-size: 20px;
+		}
+	
+		.navigation{
+			display: grid;
+			grid-template-rows: auto;
+			grid-template-areas: 
+			"sitename menuitem1 menuitem2 menuitem3 blank login ";
+			
+		}
+		
+		.navind{
+			grid-area: sitename;
+		}
+		.svt{
+			grid-area: menuitem1;
+		}
+		.GIT{
+			grid-area: menuitem2;
+		}
+		
+		.navyt{
+			grid-area: menuitem3;
+		}
+		.navblank1{
+			grid-area: blank;
+		}
+		.logincontainer{
+			grid-area: login;
+		}
+		
+		.container{
+			display: grid;
+			grid-template-columns: 150px 150px 150px 150px;
+			grid-template-rows: auto;
+			grid-template-areas: 
+			"SectionA SectionA . SectionB"
+			"Article0 Article1 . SectionB"
+			"footer footer footer footer";
+			
+		}
+		.SectionA{
+			grid-area: SectionA;
+		}
+		.SectionB{
+			grid-area: SectionB;
+		}
+		.Article0{
+			grid-area: Article0;
+		}
+		.Article1{
+			grid-area: Article1;
+		}
+		
+		.aside{
+			  grid-area: footer;
+		
+		}
