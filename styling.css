@@ -1,5 +1,6 @@
 * {
 			box-sizing: border-box;
+			border-style: double;
 		}
 		body {
 			background-color: OldLace;
@@ -13,12 +14,25 @@
 			font-family: Tahoma;
 			font-size: 20px;
 		}
-	
+		.container{
+			display: grid;
+			grid-template-rows: auto;
+			grid-template-columns: 25% 25% 25% 25%;
+			grid-template-areas: 
+			"navigation navigation navigation navigation"
+			"titlecontainer titlecontainer ArticleB ArticleB"
+			"article_left article_right ArticleB ArticleB"
+			"footer footer footer footer";
+			align-content: center;
+			
+		}
 		.navigation{
 			display: grid;
+			grid-area: navigation;
 			grid-template-rows: auto;
 			grid-template-areas: 
 			"sitename menuitem1 menuitem2 menuitem3 blank login ";
+			align-content: center; 
 			
 		}
 		
@@ -42,27 +56,16 @@
 			grid-area: login;
 		}
 		
-		.container{
-			display: grid;
-			grid-template-columns: 150px 150px 150px 150px;
-			grid-template-rows: auto;
-			grid-template-areas: 
-			"SectionA SectionA . SectionB"
-			"Article0 Article1 . SectionB"
-			"footer footer footer footer";
+		
+		.article_left{
+			grid-area: article_left;
+		}
+		.article_right{
+			grid-area: article_right;
+		}
+		SectionB{
+			grid-area: ArticleB;
 			
-		}
-		.SectionA{
-			grid-area: SectionA;
-		}
-		.SectionB{
-			grid-area: SectionB;
-		}
-		.Article0{
-			grid-area: Article0;
-		}
-		.Article1{
-			grid-area: Article1;
 		}
 		
 		.aside{
