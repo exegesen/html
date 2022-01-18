@@ -1,6 +1,6 @@
 * {
 			box-sizing: border-box;
-			border-style: double;
+			
 		}
 		body {
 			background-color: OldLace;
@@ -17,12 +17,11 @@
 		.container{
 			display: grid;
 			grid-template-rows: auto;
-			grid-template-columns: 25% 25% 25% 25%;
+			grid-template-columns: 25% 25% 50%;
 			grid-template-areas: 
-			"navigation navigation navigation navigation"
-			"titlecontainer titlecontainer ArticleB ArticleB"
-			"article_left article_right ArticleB ArticleB"
-			"footer footer footer footer";
+			"titlecontainer titlecontainer ArticleB "
+			"article_left article_right ArticleB "
+			"footer footer footer";
 			align-content: center;
 			
 		}
