@@ -16,13 +16,7 @@
 		}
 		.container{
 			display: grid;
-			grid-template-rows: auto;
-			grid-template-columns: 25% 25% 50%;
-			grid-template-areas: 
-			"titlecontainer titlecontainer ArticleB "
-			"article_left article_right ArticleB "
-			"footer footer footer";
-			align-content: center;
+			grid-template-columns: 70% 30%;
 			
 		}
 		.navigation{
@@ -57,17 +51,30 @@
 		
 		
 		.article_left{
-			grid-area: article_left;
-		}
-		.article_right{
-			grid-area: article_right;
-		}
-		SectionB{
-			grid-area: ArticleB;
 			
 		}
-		
+		.article_right{
+			
+		}
+		.SectionB{
+			
+			
+		}
+		.SectionA{
+			display: grid;
+			grid-template-rows: auto;
+			grid-template-columns: auto;
+			grid-template-areas: 
+			"titlecontainer titlecontainer";
+			"article_left article_right";
+			align-content: center; 
+			
+		}
+		.titlecontainer{
+			grid-area: titlecontainer;
+			
+		}
 		.aside{
-			  grid-area: footer;
+			  
 		
 		}
