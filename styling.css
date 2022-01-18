@@ -78,3 +78,14 @@
 			  
 		
 		}
+		.login{
+			display: flex;
+			justify-content: left;
+		}
+		.loginwrapper{
+			
+		}
+		.loginform{
+			display: grid;
+			justify-content: center;	
+		}
